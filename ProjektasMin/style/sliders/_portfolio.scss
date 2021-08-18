@@ -1,0 +1,47 @@
+.portfolio {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 110px;
+    padding-bottom: 75px;
+
+    .portfolio__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 45px;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 75px;
+            height: 7px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $unicorn-red;
+        }
+
+        >h2 {
+            margin-bottom: 45px;
+        }
+    }
+}
+
+.portfolio__menu {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+
+    >a {
+        color: $unicorn-black;
+        text-decoration: none;
+
+        &:hover {
+            opacity: 0.25;
+        }
+    }
+}

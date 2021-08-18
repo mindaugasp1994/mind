@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+@import "variables";
+@import "header";
+@import "hero";
+@import "intro";
+@import "sliders/default";
+@import "sliders/articles";
+@import "sliders/clients";
+@import "sliders/portfolio";
+@import "quotes-member";
+@import "facts";
+@import "blog";
+@import "tweets";
+@import "footer";
+@import "helpers";

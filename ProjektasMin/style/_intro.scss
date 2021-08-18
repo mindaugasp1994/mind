@@ -1,0 +1,64 @@
+.introduction {
+    background-color: $unicorn-white;
+
+    .introduction__intro {
+        padding: 10rem 16.25rem 7.5rem;
+    }
+
+    h2 {
+        font-weight: 700;
+        margin-bottom: 4.375rem;
+    }
+}
+
+.service {
+    h3 {
+        font-weight: 700;
+    }
+
+    background-color: $unicorn-lgray;
+
+    .row {
+        padding: 5rem 11rem 6.875rem;
+
+        &>div {
+            padding: 0px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+    }
+
+}
+
+.articles {
+    background-color: $unicorn-white;
+    padding-bottom: 6.5rem;
+
+    h3 {
+        font-weight: 700;
+    }
+
+    .articles-title {
+        padding: 6.5rem 23.125rem;
+
+    }
+
+    .container-item {
+        margin: 0 1rem 8.75rem;
+        background-color: $unicorn-black;
+        color: $unicorn-white;
+        height: 23.125rem;
+        width: 23.125rem;
+
+        .quotes {
+            margin-top: 4rem;
+        }
+
+
+        .topic {
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 1rem;
+        }
+    }
+}

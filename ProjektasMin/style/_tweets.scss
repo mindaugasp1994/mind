@@ -1,0 +1,25 @@
+.tweets {
+    padding: 75px 330px 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tweets-inner {
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        border-radius: 50%;
+        margin-bottom: 35px;
+    }
+
+    i {
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+}
