@@ -1,17 +1,35 @@
 .clients {
     background-color: $unicorn-lgray;
-    padding-top: 65px;
-    padding-bottom: 105px;
+    padding: 65px 265px 105px;
+
+    @media (max-width: 415px) {
+        padding: 50px;
+    }
+
+    @media (min-width: 416px) and (max-width:769px) {
+        padding: 75px;
+    }
 
     h3 {
-        margin-left: 50%;
+        font-weight: 600;
     }
 
-    .container {
+    .clients-container {
         padding-top: 65px;
-        padding-left: 140px;
-        padding-right: 120px;
+
+        @media (max-width: 415px) {
+            padding-top: 50px;
+        }
+
+        @media (min-width: 416px) and (max-width:769px) {
+            padding-top: 50px;
+        }
     }
+}
+
+.clients-title {
+    display: flex;
+    justify-content: center;
 }
 
 .clients-sliders {
@@ -21,7 +39,6 @@
 .clients-slider-controls {
 
     .clients-slider-controls__next {
-        margin-left: -110px;
         font-size: 30px;
         background-position: center;
         position: absolute;

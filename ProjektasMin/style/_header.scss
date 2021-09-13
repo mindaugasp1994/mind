@@ -5,25 +5,58 @@ header {
     background-position: center;
 
     .navbar-brand {
+        font-weight: 600;
         text-transform: uppercase;
         color: $unicorn-black;
 
         &:hover {
-            color: $unicorn-lgray;
+            color: $unicorn-dgray;
         }
     }
 
     .navbar-expand-lg .navbar-nav .nav-link {
+        font-weight: 600;
         text-transform: uppercase;
         color: $unicorn-black;
 
         &:hover {
-            color: $unicorn-lgray;
+            color: $unicorn-dgray;
 
         }
     }
+}
 
-    .container {
-        font-weight: 500;
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.dropdown {
+
+    @media (max-width:769px) {
+        display: none;
+    }
+}
+
+.dropdown-menu {
+    background-color: transparent;
+    border: none;
+
+    .dropdown-item {
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $unicorn-black;
+
+        &:hover {
+            color: $unicorn-dgray;
+            background-color: transparent;
+        }
+
     }
 }

@@ -6,12 +6,28 @@
     padding-top: 110px;
     padding-bottom: 75px;
 
+    @media (max-width: 415px) {
+        padding: 45px 0;
+    }
+
+    @media (min-width:416px) and (max-width: 769px) {
+        padding: 50px 0;
+    }
+
     .portfolio__title {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 45px;
+        padding: 0 365px 45px;
         position: relative;
+
+        @media (max-width: 415px) {
+            padding: 0 15px 30px;
+        }
+
+        @media (min-width:416px) and (max-width: 769px) {
+            padding: 0 50px 30px;
+        }
 
         &:before {
             content: "";
@@ -25,6 +41,7 @@
         }
 
         >h2 {
+            font-weight: 600;
             margin-bottom: 45px;
         }
     }
@@ -36,6 +53,16 @@
     justify-content: space-between;
     width: 30%;
 
+    @media (max-width: 415px) {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    @media (min-width:416px) and (max-width: 769px) {
+        justify-content: center;
+        gap: 25px;
+    }
+
     >a {
         color: $unicorn-black;
         text-decoration: none;
@@ -43,5 +70,42 @@
         &:hover {
             opacity: 0.25;
         }
+    }
+}
+
+.portfolio__menu {
+    padding-bottom: 45px;
+
+    button {
+        background-color: transparent;
+        color: $unicorn-black;
+        border: none;
+
+        &:hover {
+            color: $unicorn-dgray;
+        }
+    }
+}
+
+.portfolio-slide {
+    img {
+        max-width: 100%;
+        display: block;
+    }
+}
+
+.tns-nav {
+    button {
+        margin-top: 60px;
+        height: 15px;
+        width: 15px;
+        border: none;
+        margin-left: 10px;
+        background-color: $unicorn-lgray;
+        border-radius: 50%;
+    }
+
+    .tns-nav-active {
+        background-color: $unicorn-red;
     }
 }
